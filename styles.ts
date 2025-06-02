@@ -1,0 +1,75 @@
+import { StyleSheet } from 'react-native';
+
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingTop: 60,
+    padding: 16,
+    backgroundColor: '#ffe4f0', 
+  },
+  titulo: {
+    fontSize: 30,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginTop: 20,
+    marginBottom: 16,
+    color: '#b0006d',  
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#ff69b4', 
+    borderRadius: 8,
+    padding: 12,
+    marginBottom: 16,
+    backgroundColor: '#fff0f6',
+    color: '#b0006d',
+    fontSize: 16,
+  },
+  buttonAdicionar: {
+    marginTop: 8,
+    backgroundColor: '#238db8', 
+    borderRadius: 8,
+    padding: 10,
+  },
+  buttonConcluir: {
+    marginTop: 8,
+    backgroundColor: '#277648', 
+    borderRadius: 8,
+    padding: 10,
+    width: '100%',
+  },
+  buttonExcluir: {
+    marginTop: 10,
+    backgroundColor: '#b82323', 
+    borderRadius: 8,
+    padding: 10,
+    width: '100%',
+  },
+  texto: {
+    color: '#000000',
+    fontWeight: 800,
+    fontSize: 20,
+  },
+  textoTarefa: {
+    color: '#000000',
+    fontSize: 20,
+  },
+  containerTarefa: {
+    flexDirection: 'column',  
+    justifyContent: 'center', 
+    alignItems: 'center',     
+    marginTop: 12,
+    marginBottom: 12,
+    padding: 12,
+    backgroundColor: '#fff0f6',
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: '#ff69b4',
+  },
+  linha: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 8,
+  },
+});

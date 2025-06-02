@@ -4,6 +4,8 @@ import * as SQLite from 'expo-sqlite';
 import { useEffect, useState } from 'react';
 import _tarefa from './types/tarefa';
 import Tarefa from './components/Tarefa';
+import React from 'react';
+import styles from './styles';
 
 const db = SQLite.openDatabaseSync("to-do.sqlite");
 
@@ -54,9 +56,16 @@ export default function App() {
   }
 
   return (
-    <View>
+    <View style={styles.container}>
+      <Text style={styles.titulo}>TO-DO-LIST</Text>
       <TextInput style={styles.input} value={novaTarefa} onChangeText={setNovaTarefa} />
-      <Button onPress={adicionar} title='Adicionar'/>
+      <View style={styles.buttonAdicionar}>
+        <Button 
+          onPress={adicionar} 
+          title="Adicionar" 
+          color="#f2f2f2" 
+        />
+      </View>
       <View>
         {renderLista()}
       </View>
@@ -64,8 +73,3 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  input:{
-    borderWidth: 1,
-  }
-});
